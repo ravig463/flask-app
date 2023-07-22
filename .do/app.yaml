@@ -1,0 +1,6 @@
+name: flask-app
+services:
+- name: web
+  github:
+    repo: ravig463/flask-app
+    branch: main
