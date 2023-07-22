@@ -75,7 +75,7 @@ def upload_file():
     img_array = np.array(img_array)
     img_array = np.expand_dims(img_array, 0)
 
-    model = tf.keras.models.load_model('/Users/ravigadgil/Downloads/UWECREUFiles/FlaskDemo/ViT-Merced/MobileViT-UCMerced50_50.h5', custom_objects={"Patches": Patches, "PatchEncoder": PatchEncoder})
+    model = tf.keras.models.load_model('MobileViT-UCMerced50_50.h5', custom_objects={"Patches": Patches, "PatchEncoder": PatchEncoder})
 
     sample_to_predict = np.array(img_array)
     predictions = model.predict(sample_to_predict)
